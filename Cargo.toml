@@ -1,0 +1,18 @@
+[package]
+name = "actix-test"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+actix = "0.13.0"
+actix-web = "4.2.1"
+serde = { version = "1.0.144", features = ["derive"] }
+serde_json= "1.0"
+reqwest = "0.11.11"                                                           # make http requests
+diesel = { version = "2.0.0", features = ["uuid", "r2d2", "postgres"] }
+diesel_migrations = "2.0.0"
+uuid = { version = "1.1.2", features = ["v4", "serde"]}                       
+dotenvy = "0.15.3"                                                            # enables reads from .env
+env_logger = "0.9.0"                                                          # logs events
